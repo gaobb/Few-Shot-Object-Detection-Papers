@@ -2,6 +2,14 @@
 
 *NOTE:* If your paper is not in the list, please feel free to [raise an issue](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/issues) or drop me an [e-mail](mailto:csgaobb@gmail.com?subject=[GitHub]%fewshot%papers).
 
+## Survey
+| Title | Venue |  Project|
+| :-----|:-----:|:-----:|
+|[A Comparative Review of Recent Few-Shot Object Detection Algorithms](https://arxiv.org/pdf/2111.00201.pdf)|arXiv'21|-|
+|[Few-Shot Object Detection: A Survey](https://dl.acm.org/doi/pdf/10.1145/3519022)|TNNLS'22|-|
+|[A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/pdf/2110.14711.pdf)|arXiv'21| [project](https://gabrielhuang.github.io/fsod-survey/)|
+|[Few-Shot Object Detection: A Survey](https://arxiv.org/pdf/2112.11699.pdf)|arXiv'21|-|
+
 ## 2022
 | Title | Venue | CODE | Type|
 | :-----|:-----:|:---:|:----:|

@@ -5,14 +5,15 @@
 ## Survey
 | Title | Venue |  Project|
 | :-----|:-----:|:-----:|
+|[Few-Shot Object Detection: A Survey](https://arxiv.org/pdf/2112.11699.pdf)|arXiv'21|-|
 |[A Comparative Review of Recent Few-Shot Object Detection Algorithms](https://arxiv.org/pdf/2111.00201.pdf)|arXiv'21|-|
 |[Few-Shot Object Detection: A Survey](https://dl.acm.org/doi/pdf/10.1145/3519022)|TNNLS'22|-|
 |[A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/pdf/2110.14711.pdf)|arXiv'21| [project](https://gabrielhuang.github.io/fsod-survey/)|
-|[Few-Shot Object Detection: A Survey](https://arxiv.org/pdf/2112.11699.pdf)|arXiv'21|-|
+
 
 ## 2022
-| Title | Venue | CODE | Type|
-| :-----|:-----:|:---:|:----:|
+| Title | Venue | CODE | Type| Detector | COCO 1/5/10/30-shot AP |
+| :-----|:-----:|:---:|:----:|:-----|:-----:|
 |[DETReg: Unsupervised Pretraining with Region Priors for Object Detection](https://arxiv.org/pdf/2106.04550.pdf) |CVPR|[CODE](https://github.com/amirbar/DETReg)| Fine-tuning|
 |[Label, Verify, Correct: A Simple Few Shot Object Detection Method](https://openaccess.thecvf.com/content/CVPR2022/papers/Kaul_Label_Verify_Correct_A_Simple_Few_Shot_Object_Detection_Method_CVPR_2022_paper.pdf)| CVPR | [CODE](https://github.com/prannaykaul/lvc)|Pseudo-Label Fine-tuning|
 |[Sylph: A Hypernetwork Framework for Incremental Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2022/papers/Yin_Sylph_A_Hypernetwork_Framework_for_Incremental_Few-Shot_Object_Detection_CVPR_2022_paper.pdf)| CVPR |-| Meta-learning|
@@ -21,20 +22,20 @@
 
 
 ## 2021
-| Title | Venue | CODE |Type|
-| :-----|:-----:|:----:|:----:|
-|[DeFRCN: Decoupled Faster R-CNN for Few-Shot Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf) | ICCV | [CODE](https://github.com/er-muyue/DeFRCN)|Fine-tuning|
-|[Universal-Prototype Augmentation for Few-Shot Object Detection](https://arxiv.org/abs/2103.01077)| ICCV |[CODE](https://github.com/AmingWu/UP-FSOD)|Fine-tuning|
-|[Dual-awareness Attention for Few-Shot Object Detection](https://arxiv.org/abs/2102.12152)|TMM|[CODE](https://github.com/Tung-I/Dual-awareness-Attention-for-Few-shot-Object-Detection)|Meta-learning|
-|[Few-Shot Object Detection via Association and Discrimination](https://proceedings.neurips.cc/paper/2021/file/8a1e808b55fde9455cb3d8857ed88389-Paper.pdf)| NeurIPS | [CODE](https://github.com/yhcao6/FADI)|Fine-tuning|
-|[Semantic Relation Reasoning for Shot-Stable Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Semantic_Relation_Reasoning_for_Shot-Stable_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|-|Fine-tuning|
-|[Incremental Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Ganea_Incremental_Few-Shot_Instance_Segmentation_CVPR_2021_paper.pdf)| CVPR |[CODE](https://github.com/danganea/iMTFA)|Fine-tuning|
-|[Beyond Max-Margin: Class Margin Equilibrium for Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Beyond_Max-Margin_Class_Margin_Equilibrium_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/Bohao-Lee/CME)|Meta-learning|
-|[Dense Relation Distillation with Context-aware Aggregation for Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Dense_Relation_Distillation_With_Context-Aware_Aggregation_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/hzhupku/DCNet)|Meta-learning|
-|[Transformation Invariant Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Transformation_Invariant_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|-|Meta-learning|
-|[FSCE: Few-Shot Object Detection via Contrastive Proposal Encoding](https://openaccess.thecvf.com/content/CVPR2021/papers/Sun_FSCE_Few-Shot_Object_Detection_via_Contrastive_Proposal_Encoding_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/MegviiDetection/FSCE)|Fine-tuning|
-|[Generalized Few-Shot Object Detection without Forgetting](https://openaccess.thecvf.com/content/CVPR2021/papers/Fan_Generalized_Few-Shot_Object_Detection_Without_Forgetting_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/Megvii-BaseDetection/GFSD)|Fine-tuning|
-|[Hallucination Improves Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Hallucination_Improves_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/pppplin/HallucFsDet)|Fine-tuning|
+| Title | Venue | CODE |Type| Detector | COCO 1/5/10/30-shot AP |
+| :-----|:-----:|:----:|:----:|:-----|:-----:|
+|[DeFRCN: Decoupled Faster R-CNN for Few-Shot Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf) | ICCV | [CODE](https://github.com/er-muyue/DeFRCN)|Fine-tuning|Faster R-CNN R-101| 7.7/15.9/19.0/22.6|
+|[Universal-Prototype Augmentation for Few-Shot Object Detection](https://arxiv.org/abs/2103.01077)| ICCV |[CODE](https://github.com/AmingWu/UP-FSOD)|Fine-tuning|Faster R-CNN R-101| -/-/11.0/15.6|
+|[Dual-awareness Attention for Few-Shot Object Detection](https://arxiv.org/pdf/2102.12152.pdf)|TMM|[CODE](https://github.com/Tung-I/Dual-awareness-Attention-for-Few-shot-Object-Detection)|Meta-learning|Faster R-CNN R-50| -/-/-|
+|[Few-Shot Object Detection via Association and Discrimination](https://proceedings.neurips.cc/paper/2021/file/8a1e808b55fde9455cb3d8857ed88389-Paper.pdf)| NeurIPS | [CODE](https://github.com/yhcao6/FADI)|Fine-tuning|Faster R-CNN R-101| 5.7/-/12.2/16.1|
+|[Semantic Relation Reasoning for Shot-Stable Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Semantic_Relation_Reasoning_for_Shot-Stable_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|-|Fine-tuning|Faster R-CNN R-101| -/-/11.3/14.7|
+|[Incremental Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content/CVPR2021/papers/Ganea_Incremental_Few-Shot_Instance_Segmentation_CVPR_2021_paper.pdf)| CVPR |[CODE](https://github.com/danganea/iMTFA)|Fine-tuning|Faster R-CNN R-50| 2.4/6.6/8.5-/|
+|[Beyond Max-Margin: Class Margin Equilibrium for Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Beyond_Max-Margin_Class_Margin_Equilibrium_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/Bohao-Lee/CME)|Meta-learning|Meta YOLO|-/-/15.1/16.9|
+|[Dense Relation Distillation with Context-aware Aggregation for Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Dense_Relation_Distillation_With_Context-Aware_Aggregation_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/hzhupku/DCNet)|Meta-learning|Faster R-CNN R-101| -/-/12.8/18.6|
+|[Transformation Invariant Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Transformation_Invariant_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|-|Meta-learning|Faster R-CNN R-101|-/-/16.3/18.3|
+|[FSCE: Few-Shot Object Detection via Contrastive Proposal Encoding](https://openaccess.thecvf.com/content/CVPR2021/papers/Sun_FSCE_Few-Shot_Object_Detection_via_Contrastive_Proposal_Encoding_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/MegviiDetection/FSCE)|Fine-tuning|Faster R-CNN R-101|-/-/11.9/16.4|
+|[Generalized Few-Shot Object Detection without Forgetting](https://openaccess.thecvf.com/content/CVPR2021/papers/Fan_Generalized_Few-Shot_Object_Detection_Without_Forgetting_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/Megvii-BaseDetection/GFSD)|Fine-tuning|R-CNN-ResNet-101|-/8.3/10.5/13.8|
+|[Hallucination Improves Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Hallucination_Improves_Few-Shot_Object_Detection_CVPR_2021_paper.pdf)|CVPR|[CODE](https://github.com/pppplin/HallucFsDet)|Fine-tuning|Faster R-CNN R-101|4.4/-/-/-|
 |[StarNet: towards Weakly Supervised Few-Shot Object Detection](http://arxiv.org/abs/2003.06798)|AAAI|[CODE](-)|Meta-learning|
 
 ## 2020

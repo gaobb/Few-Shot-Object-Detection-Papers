@@ -14,7 +14,7 @@
 ## 2022
 | Title | Venue | CODE | Type| Detector | COCO 1/5/10/30-shot AP |
 | :-----|:-----:|:---:|:----:|:-----|:-----:|
-|[DETReg: Unsupervised Pretraining with Region Priors for Object Detection](https://arxiv.org/pdf/2106.04550.pdf) |CVPR|[CODE](https://github.com/amirbar/DETReg)| Fine-tuning| Deformable DETR |-/-/25.0/30.0| 
+|[DETReg: Unsupervised Pretraining with Region Priors for Object Detection](https://arxiv.org/pdf/2106.04550.pdf) |CVPR|[CODE](https://github.com/amirbar/DETReg)| Fine-tuning| Deformable DETR |-/-/-/-| 
 |[Label, Verify, Correct: A Simple Few Shot Object Detection Method](https://openaccess.thecvf.com/content/CVPR2022/papers/Kaul_Label_Verify_Correct_A_Simple_Few_Shot_Object_Detection_Method_CVPR_2022_paper.pdf)| CVPR | [CODE](https://github.com/prannaykaul/lvc)|Pseudo-Label Fine-tuning|  Faster R-CNN R-101+DINO ViT-S| -/-/17.8/24.5|
 |[Sylph: A Hypernetwork Framework for Incremental Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2022/papers/Yin_Sylph_A_Hypernetwork_Framework_for_Incremental_Few-Shot_Object_Detection_CVPR_2022_paper.pdf)| CVPR |-| Meta-learning|Faster R-CNN R-50|-/-/-/-|
 |[Few-Shot Object Detection with Fully Cross-Transformer](https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Few-Shot_Object_Detection_With_Fully_Cross-Transformer_CVPR_2022_paper.pdf)| CVPR | - |Meta-learning| Faster R-CNN-PVTv2-B2-Li|5.6/14.0/17.1/21.4|

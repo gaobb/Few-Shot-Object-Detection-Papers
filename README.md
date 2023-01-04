@@ -6,7 +6,7 @@ Welcome to report results and revise mistakes by creating issues or pull request
 *NOTE:* If your paper is not in the list, please feel free to [raise an issue](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/issues) or drop me an [e-mail](mailto:csgaobb@gmail.com?subject=[GitHub]%fewshot%papers).
 
 
-MSCOCO Leaderboard: [[html]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers#coco-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers#coco-fsod.md)
+MSCOCO FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/mscoco-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/mscoco-fsod.md)
 
 ## Survey
 | Methods | Venue |  Project|

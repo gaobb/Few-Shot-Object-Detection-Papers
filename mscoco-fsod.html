@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <title>Few-Shot Classification Leaderboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Yaoyao Liu" /> 
+        <meta name="description" content="Few-Shot Classification Leaderboard for miniImageNet, tieredImageNet, FC100, and CIFAR-FS.">
+        <meta name="keywords" content="few-shot learning"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>MS-COCO | </title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="few-shot-classification-leaderboard" href="https://few-shot.yyliu.net/feed.xml">
+
+    <!-- Include the standard DataTables bits -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <!-- First, this walks through the tables that occur between ...-begin
+         and ...-end and add the "datatable" class to them.
+         Then it invokes DataTable's standard initializer
+         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
+      -->
+    <script>
+      $(document).ready(function(){
+          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+          $('table.display').DataTable( {
+              paging: false,
+              stateSave: true,
+              searching: true
+          });
+       });
+    </script>
+
+</head>
+<body>
+
+<!-- Page Content -->
+<div class="container">            
+      <div id="main">
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Content Column -->
+            <div class="" id="tg-sb-content">
+                <div class="datatable-begin"></div>
+                <h2 id="mscoco-leaderboard">mscoco-leaderboard</h2>
+    
+    <h4 id="edit-this-leaderboard"><a href="https://github.com/gaobb/Few-Shot-Object-Detection-Papers#mscoco-fsod.md">Edit this leaderboard</a></h4>
+    
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Method</th>
+<th style="text-align: center;">Venue</th>
+<th style="text-align: center;">Year</th>
+<th style="text-align: center;">Backbone</th>
+<th style="text-align: center;">Detector</th>
+<th style="text-align: center;">Paradigm</th>
+<th style="text-align: left;">Setting</th>
+<th style="text-align: center;">COCO 1/5/10/30-shot AP</th>
+<th style="text-align: center;">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://openreview.net/pdf?id=dVXO3Orjmxk">DCFS</a></td>
+<td style="text-align: center;">NeurIPS</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster-RCNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">8.1/16.6/19.5/22.7</td>
+<td style="text-align: center;"><a href="https://csgaobb.github.io/Projects/DCFS">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openreview.net/pdf?id=dVXO3Orjmxk">DCFS</a></td>
+<td style="text-align: center;">NeurIPS</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster-RCNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">6.2/15.7/18.3/21.9</td>
+<td style="text-align: center;"><a href="https://csgaobb.github.io/Projects/DCFS">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136790707.pdf">FewX</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/15.1/-/-</td>
+<td style="text-align: center;"><a href="https://github.com/fanq15/FewX">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690569.pdf">MFDC</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">10.8/16.4/19.4/22.7</td>
+<td style="text-align: center;"><a href="https://github.com/WuShuang1998/MFDC">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930661.pdf">AcroFOD</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">YOLOv5</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: center;">-/-/-/-</td>
+<td style="text-align: center;"><a href="https://github.com/Hlings/AcroFOD">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800300.pdf">TENET</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/19.1/-</td>
+<td style="text-align: center;"><a href="https://github.com/ZS123-lang/TENET">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800354.pdf">MoFSOD</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster RCNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: center;">-/-/-/-</td>
+<td style="text-align: center;"><a href="https://github.com/amazon-research/few-shot-object-detection-benchmark">-</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800388.pdf">MRSN</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/15.7/17.5</td>
+<td style="text-align: center;"><a href="https://github.com/MMatx/MRSN">-</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700279.pdf">KD-DeFRCN</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/18.9/22.6</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/pdf/2106.04550.pdf">DETReg</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">DETReg</td>
+<td style="text-align: center;">Deformable DETR</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">-/-/~~25.0~~/~~30.0~~</td>
+<td style="text-align: center;"><a href="https://github.com/amirbar/DETReg">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Kaul_Label_Verify_Correct_A_Simple_Few_Shot_Object_Detection_Method_CVPR_2022_paper.pdf">Label, Verify, Correct</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-101+DINO ViT-S</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/17.8/24.5</td>
+<td style="text-align: center;"><a href="https://github.com/prannaykaul/lvc">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Yin_Sylph_A_Hypernetwork_Framework_for_Incremental_Few-Shot_Object_Detection_CVPR_2022_paper.pdf">Sylph</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">iFSOD</td>
+<td style="text-align: center;">-/-/-/-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Few-Shot_Object_Detection_With_Fully_Cross-Transformer_CVPR_2022_paper.pdf">FCT</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">PVTv2-B2-Li</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">5.6/7.9/14.0/17.1/21.4</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Kernelized_Few-Shot_Object_Detection_With_Efficient_Integral_Aggregation_CVPR_2022_paper.pdf">KFSOD</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster-RCN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/18.5/-</td>
+<td style="text-align: center;"><a href="https://github.com/ZS123-lang/KFSOD">-</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf">DeFRCN</a></td>
+<td style="text-align: center;">ICCV</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">7.7/15.9/18.5/22.6</td>
+<td style="text-align: center;"><a href="https://github.com/er-muyue/DeFRCN">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf">DeFRCN</a></td>
+<td style="text-align: center;">ICCV</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">4.8/13.6/16.8/21.2</td>
+<td style="text-align: center;"><a href="https://github.com/er-muyue/DeFRCN">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Universal-Prototype_Enhancing_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf">FSOD$^{up}$</a></td>
+<td style="text-align: center;">ICCV</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">-/-/11.0/15.6</td>
+<td style="text-align: center;"><a href="https://github.com/AmingWu/UP-FSOD">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/pdf/2102.12152.pdf">DAnA</a></td>
+<td style="text-align: center;">TMM</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/18.6/21.6</td>
+<td style="text-align: center;"><a href="https://github.com/Tung-I/Dual-awareness-Attention-for-Few-shot-Object-Detection">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://proceedings.neurips.cc/paper/2021/file/8a1e808b55fde9455cb3d8857ed88389-Paper.pdf">FADI</a></td>
+<td style="text-align: center;">NeurIPS</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">5.7/10.1/12.2/16.1</td>
+<td style="text-align: center;"><a href="https://github.com/yhcao6/FADI">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Semantic_Relation_Reasoning_for_Shot-Stable_Few-Shot_Object_Detection_CVPR_2021_paper.pdf">SRR-FSD</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/11.3/14.7</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ganea_Incremental_Few-Shot_Instance_Segmentation_CVPR_2021_paper.pdf">MTFA</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">2.4/6.6/8.5/-</td>
+<td style="text-align: center;"><a href="https://github.com/danganea/iMTFA">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ganea_Incremental_Few-Shot_Instance_Segmentation_CVPR_2021_paper.pdf">IMTFA</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">iFSOD</td>
+<td style="text-align: center;">3.3/6.2/7.1/-</td>
+<td style="text-align: center;"><a href="https://github.com/danganea/iMTFA">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Beyond_Max-Margin_Class_Margin_Equilibrium_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf">CME</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">YOLO</td>
+<td style="text-align: center;">Meta YOLO</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">-/-/15.1/16.9</td>
+<td style="text-align: center;"><a href="https://github.com/Bohao-Lee/CME">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hu_Dense_Relation_Distillation_With_Context-Aware_Aggregation_for_Few-Shot_Object_Detection_CVPR_2021_paper.pdf">DCNet</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/12.8/18.6</td>
+<td style="text-align: center;"><a href="https://github.com/hzhupku/DCNet"></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Transformation_Invariant_Few-Shot_Object_Detection_CVPR_2021_paper.pdf">TIP</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/16.3/18.3</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sun_FSCE_Few-Shot_Object_Detection_via_Contrastive_Proposal_Encoding_CVPR_2021_paper.pdf">FSCE</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/11.1/15.3</td>
+<td style="text-align: center;"><a href="https://github.com/MegviiDetection/FSCE">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Fan_Generalized_Few-Shot_Object_Detection_Without_Forgetting_CVPR_2021_paper.pdf">Retentive R-CNN</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">-/8.3/10.5/13.8</td>
+<td style="text-align: center;"><a href="https://github.com/Megvii-BaseDetection/GFSD">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Hallucination_Improves_Few-Shot_Object_Detection_CVPR_2021_paper.pdf">Halluc</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">4.4/-/-/-</td>
+<td style="text-align: center;"><a href="https://github.com/pppplin/HallucFsDet">-</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/abs/1908.01998">FSOD-ARPN-MRD</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-50</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">MetaTest</td>
+<td style="text-align: center;">-/-/-/-/</td>
+<td style="text-align: center;"><a href="https://github.com/fanq15/Few-Shot-Object-Detection-Dataset">-</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Perez-Rua_Incremental_Few-Shot_Object_Detection_CVPR_2020_paper.pdf">ONCE</a></td>
+<td style="text-align: center;">CVPR</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">ResNet</td>
+<td style="text-align: center;">CentreNet</td>
+<td style="text-align: center;">Meta-learning</td>
+<td style="text-align: left;">iFSOD</td>
+<td style="text-align: center;">-/-/-/-/</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/abs/2003.06957">TFA</a></td>
+<td style="text-align: center;">ICML</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/10.0/13.7</td>
+<td style="text-align: center;"><a href="https://github.com/ucbdrive/few-shot-object-detection">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/abs/2003.06957">TFA</a></td>
+<td style="text-align: center;">ICML</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">gFSOD</td>
+<td style="text-align: center;">1.9/7.0/9.1/12.1</td>
+<td style="text-align: center;"><a href="https://github.com/ucbdrive/few-shot-object-detection">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620188.pdf">FSDetView</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/12.5/14.7</td>
+<td style="text-align: center;"><a href="http://imagine.enpc.fr/~xiaoy/FSDetView/">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/pdf/2007.09384.pdf">MPSR</a></td>
+<td style="text-align: center;">ECCV</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/9.8/14.1</td>
+<td style="text-align: center;"><a href="https://github.com/jiaxi-wu/MPSR">PyTorch</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://arxiv.org/pdf/2010.11714.pdf">NP-RepMet</a></td>
+<td style="text-align: center;">NeurIPS</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN + DCN</td>
+<td style="text-align: center;">Fine-tuning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/-/-</td>
+<td style="text-align: center;"><a href="https://github.com/yang-yk/NP-RepMet">MXNet</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://dl.acm.org/doi/10.1145/3394171.3413832">Meta-RCNN</a></td>
+<td style="text-align: center;">ACM-MM</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">R-101</td>
+<td style="text-align: center;">Faster R-CNN</td>
+<td style="text-align: center;">Meta-learning</td>
+<td style="text-align: left;">FSOD</td>
+<td style="text-align: center;">-/-/8.7/12.4</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>

@@ -43,15 +43,13 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 - [Meta-RCNN: Meta Learning for Few-Shot Object Detection](https://dl.acm.org/doi/10.1145/3394171.3413832), ACM-MM 2020.
 
 ## Survey
-| Methods | Venue |  Project|
-| :-----|:-----:|:-----:|
-|[Few-Shot Object Detection: A Survey](https://arxiv.org/pdf/2112.11699.pdf)|arXiv'21|-|
-|[A Comparative Review of Recent Few-Shot Object Detection Algorithms](https://arxiv.org/pdf/2111.00201.pdf)|arXiv'21|-|
-|[Few-Shot Object Detection: A Survey](https://dl.acm.org/doi/pdf/10.1145/3519022)|TNNLS'22|-|
-|[A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/pdf/2110.14711.pdf)|arXiv'21| [project](https://gabrielhuang.github.io/fsod-survey/)|
+- [Few-Shot Object Detection: A Survey](https://arxiv.org/pdf/2112.11699.pdf), arXiv 2021.
+- [A Comparative Review of Recent Few-Shot Object Detection Algorithms](https://arxiv.org/pdf/2111.00201.pdf), arXiv 2021.
+- [Few-Shot Object Detection: A Survey](https://dl.acm.org/doi/pdf/10.1145/3519022), TNNLS 2022.
+- [A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/pdf/2110.14711.pdf), arXiv 2021, [[project]](https://gabrielhuang.github.io/fsod-survey/).
 
 ### ToDo
-- [ ] PASCALVOC FSOD Leaderboard 
+- [ ] PASCALVOC FSOD Leaderboard.
 
 # Contact
 csgaobb@gmail.com

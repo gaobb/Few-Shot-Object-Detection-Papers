@@ -5,7 +5,7 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 
 
 - MSCOCO FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/mscoco-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/mscoco-fsod.md)
-- PASCAL-VOC FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/pascal-voc-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/pascalvoc-fsod.md)
+- PASCALVOC FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/pascal-voc-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/pascalvoc-fsod.md)
 
 ## Survey
 | Methods | Venue |  Project|

@@ -49,7 +49,9 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 - [A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/pdf/2110.14711.pdf), arXiv 2021, [[project]](https://gabrielhuang.github.io/fsod-survey/).
 
 ### ToDo
-- [ ] PASCALVOC FSOD Leaderboard.
+- [x] MSCOCO FSOD Leaderboard
+- [x] PASCAL-VOC FSOD Leaderboard.
+
 
 # Contact
 csgaobb@gmail.com

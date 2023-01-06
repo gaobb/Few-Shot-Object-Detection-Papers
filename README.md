@@ -5,7 +5,7 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 
 ## Few-Shot Object Detection Lederboard 
 - MSCOCO FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/mscoco-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/mscoco-fsod.md)
-- PASCALVOC FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/pascal-voc-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/pascalvoc-fsod.md)
+- PASCAL-VOC FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/pascalvoc-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/pascalvoc-fsod.md)
 
 ## Few-Shot Object Detection Papers
 - [DCFS: Decoupling Classifier for Boosting Few-shot Object Detection and Instance Segmentation](https://openreview.net/pdf?id=dVXO3Orjmxk), NeurIPS 2022.

@@ -2,6 +2,7 @@
 | :-----|:-----:|:-----:|:---:|:---:|:----:|:-----|:-----:|:-----:|
 [DCFS](https://openreview.net/pdf?id=dVXO3Orjmxk)| NeurIPS | 2022| R-101| Faster-RCNN |Fine-tuning|FSOD| 8.1/16.6/19.5/22.7 |[PyTorch](https://csgaobb.github.io/Projects/DCFS)|
 [DCFS](https://openreview.net/pdf?id=dVXO3Orjmxk)| NeurIPS | 2022| R-101| Faster-RCNN |Fine-tuning|gFSOD|6.2/15.7/18.3/21.9 |[PyTorch](https://csgaobb.github.io/Projects/DCFS)|
+|[CoCo-RCNN](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf)| ECCV |2022|R-101|Sparse-RCNN| Fine-tuning |FSOD|5.2/-/16.4/19.2|[PyTorch](https://github.com/Phoenix-V/coco-rcnn)|
 [FewX](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136790707.pdf)|ECCV|2022| R-50 |Faster R-CNN|Fine-tuning|FSOD|-/15.1/-/-|[PyTorch](https://github.com/fanq15/FewX)|
 [MFDC](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690569.pdf)|ECCV|2022| R-101 |Faster R-CNN|Fine-tuning|FSOD|10.8/16.4/19.4/22.7|[PyTorch](https://github.com/WuShuang1998/MFDC)|
 [AcroFOD](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930661.pdf)|ECCV|2022|-|YOLOv5|Fine-tuning|-|-/-/-/- |[PyTorch](https://github.com/Hlings/AcroFOD)|
@@ -12,8 +13,10 @@
 |[DETReg](https://arxiv.org/pdf/2106.04550.pdf) |CVPR|2022|DETReg|Deformable DETR|Fine-tuning|gFSOD|-/-/~~25.0~~/~~30.0~~| [PyTorch](https://github.com/amirbar/DETReg)|
 |[Label, Verify, Correct](https://openaccess.thecvf.com/content/CVPR2022/papers/Kaul_Label_Verify_Correct_A_Simple_Few_Shot_Object_Detection_Method_CVPR_2022_paper.pdf)| CVPR |2022|R-101+DINO ViT-S|Faster R-CNN|Fine-tuning|FSOD| -/-/17.8/24.5|[PyTorch](https://github.com/prannaykaul/lvc)|
 |[Sylph](https://openaccess.thecvf.com/content/CVPR2022/papers/Yin_Sylph_A_Hypernetwork_Framework_for_Incremental_Few-Shot_Object_Detection_CVPR_2022_paper.pdf)| CVPR |2022|R-50|Faster R-CNN| meta-learning|iFSOD|-/-/-/-|-|
-|[FCT](https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Few-Shot_Object_Detection_With_Fully_Cross-Transformer_CVPR_2022_paper.pdf)| CVPR |2022|PVTv2-B2-Li| Faster R-CNN |meta-learning|FSOD|5.6/14.0/17.1/21.4|-|
+|[FCT](https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Few-Shot_Object_Detection_With_Fully_Cross-Transformer_CVPR_2022_paper.pdf)| CVPR |2022|PVTv2-B2-Li| Faster R-CNN |meta-learning|FSOD|5.6/14.0/17.1/21.4|[PyTorch](https://github.com/GuangxingHan/FCT)|
 |[KFSOD](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Kernelized_Few-Shot_Object_Detection_With_Efficient_Integral_Aggregation_CVPR_2022_paper.pdf)| CVPR |2022|R-50|Faster-RCN|meta-learning|FSOD|-/-/18.5/-|[-](https://github.com/ZS123-lang/KFSOD)|
+|[Meta-Faster-RCNN](https://arxiv.org/abs/2104.07719)| AAAI |2022|R-101|Faster R-CNN| meta-learning|FSOD|5.1/10.8/12.7/16.6|[PyTorch](https://github.com/GuangxingHan/Meta-Faster-R-CNN)|
+|[QA-FewDet](https://arxiv.org/abs/2112.09791)| ICCV |2021|R-101|Faster R-CNN| meta-learning|FSOD|4.9/9.7/11.6/16.5|[PyTorch](https://github.com/GuangxingHan/QA-FewDet)|
 |[DeFRCN](https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf) | ICCV | 2021|R-101|Faster R-CNN| Fine-tuning|FSOD|7.7/15.9/18.5/22.6|[PyTorch](https://github.com/er-muyue/DeFRCN)
 |[DeFRCN](https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf) | ICCV | 2021|R-101|Faster R-CNN| Fine-tuning|gFSOD|4.8/13.6/16.8/21.2|[PyTorch](https://github.com/er-muyue/DeFRCN)
 |[FSOD$^{up}$](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Universal-Prototype_Enhancing_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf)| ICCV |2021|R-101|Faster R-CNN|Fine-tuning|gFSOD|-/-/11.0/15.6|[PyTorch](https://github.com/AmingWu/UP-FSOD)

@@ -5,6 +5,9 @@ from markdown.extensions.tables import TableExtension
 inputmd="pascalvoc-fsod.md" # "mscoco-fsod.md"
 outhtml="pascalvoc-fsod.html" #mscoco-fsod.html
 
+inputmd="mscoco-fsod.md"
+outhtml="mscoco-fsod.html"
+
 input_file = codecs.open(inputmd, mode="r", encoding="utf-8")
 text = input_file.read()
 

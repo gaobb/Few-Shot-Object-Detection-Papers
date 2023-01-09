@@ -9,6 +9,7 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 
 ## Few-Shot Object Detection Papers
 - [DCFS: Decoupling Classifier for Boosting Few-shot Object Detection and Instance Segmentation](https://openreview.net/pdf?id=dVXO3Orjmxk), NeurIPS 2022.
+- [CoCo-RCNN: Few-Shot End-to-End Object Detection via Constantly Concentrated Encoding across Heads](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf), ECCV 2022.
 - [FewX: Few-Shot Object Detection with Model Calibration](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136790707.pdf), ECCV 2022.
 - [MFDC: Multi-Faceted Distillation of Base-Novel Commonality for Few-shot Object Detection](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690569.pdf),ECCV 2022. 
 - [AcroFOD: An Adaptive Method for Cross-domain Few-shot Object Detection](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136930661.pdf), ECCV 2022.
@@ -21,6 +22,8 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 - [Sylph: A Hypernetwork Framework for Incremental Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2022/papers/Yin_Sylph_A_Hypernetwork_Framework_for_Incremental_Few-Shot_Object_Detection_CVPR_2022_paper.pdf), CVPR 2022.
 - [FCT: Few-Shot Object Detection with Fully Cross-Transformer](https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Few-Shot_Object_Detection_With_Fully_Cross-Transformer_CVPR_2022_paper.pdf),CVPR 2022.
 - [KFSOD: Kernelized Few-shot Object Detection with Efficient Integral Aggregation](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Kernelized_Few-Shot_Object_Detection_With_Efficient_Integral_Aggregation_CVPR_2022_paper.pdf), CVPR 2022.
+- [Meta Faster R-CNN: Towards Accurate Few-Shot Object Detection with Attentive Feature Alignment](https://arxiv.org/abs/2104.07719), AAAI 2022.
+- [QA-FewDet: Query Adaptive Few-Shot Object Detection with Heterogeneous Graph Convolutional Networks](https://arxiv.org/abs/2112.09791), ICCV 2021.
 - [DeFRCN: Decoupled Faster R-CNN for Few-Shot Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Qiao_DeFRCN_Decoupled_Faster_R-CNN_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf), ICCV 2021.
 - [FSOD$^{up}$: Universal-Prototype Augmentation for Few-Shot Object Detection](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Universal-Prototype_Enhancing_for_Few-Shot_Object_Detection_ICCV_2021_paper.pdf), ICCV 2021.
 - [DAnA: Dual-awareness Attention for Few-Shot Object Detection](https://arxiv.org/pdf/2102.12152.pdf), TMM 2021.

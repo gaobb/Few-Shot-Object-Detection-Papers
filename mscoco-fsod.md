@@ -1,5 +1,15 @@
 | Method | Venue | Year| Backbone|Detector|Paradigm|Setting| COCO 1/5/10/30-shot AP |Code|
 | :-----|:-----:|:-----:|:---:|:---:|:----:|:-----|:-----:|:-----:|
+[FS-DETR](https://openaccess.thecvf.com/content/ICCV2023/papers/Bulat_FS-DETR_Few-Shot_DEtection_TRansformer_with_Prompting_and_without_Re-Training_ICCV_2023_paper.pdf)|ICCV| 2023| R50 | DETR | without re-training| FSOD| 7.0/10.9/11.3/-|[-]()
+[σ-ADP](https://openaccess.thecvf.com/content/ICCV2023/papers/Du_s-Adaptive_Decoupled_Prototype_for_Few-Shot_Object_Detection_ICCV_2023_paper.pdf)| ICCV| 2023|R-101|Faster R-CNN|meta-learning|FSOD| -/-/20.3/22.8|[-]()|
+[Norm-VAE](https://openaccess.thecvf.com/content/CVPR2023/papers/Xu_Generating_Features_With_Increased_Crop-Related_Diversity_for_Few-Shot_Object_Detection_CVPR_2023_paper.pdf)| CVPR| 2023|R-101| Faster-RCNN |Fine-tuning|FSOD|9.5/15.9/18.7/22.5 |[-]()
+[MetaAug](https://openaccess.thecvf.com/content/CVPR2023/papers/Demirel_Meta-Tuning_Loss_Functions_and_Data_Augmentation_for_Few-Shot_Object_Detection_CVPR_2023_paper.pdf) |CVPR| 2023|R-101| Faster-RCNN |Fine-tuning|FSOD|-/-/24.4/28.0|[-]()
+[MetaAug](https://openaccess.thecvf.com/content/CVPR2023/papers/Demirel_Meta-Tuning_Loss_Functions_and_Data_Augmentation_for_Few-Shot_Object_Detection_CVPR_2023_paper.pdf) |CVPR| 2023|R-101| Faster-RCNN |Fine-tuning|FSOD|-/-/18.8/23.4|[-]()
+[NIFF](https://openaccess.thecvf.com/content/CVPR2023/papers/Guirguis_NIFF_Alleviating_Forgetting_in_Generalized_Few-Shot_Object_Detection_via_Neural_CVPR_2023_paper.pdf)|CVPR |2023| R-101| Faster-RCNN |Fine-tuning|gFSOD|-/33.1/34.0/34.5|[-]()
+[DiGeo](https://openaccess.thecvf.com/content/CVPR2023/papers/Ma_DiGeo_Discriminative_Geometry-Aware_Learning_for_Generalized_Few-Shot_Object_Detection_CVPR_2023_paper.pdf) |CVPR| 2023|  R-101| Faster-RCNN |Fine-tuning|gFSOD|-/-/32.0/33.1|[PyTorch](https://github.com/Phoenix-V/DiGeo)
+[ICPE](https://ojs.aaai.org/index.php/AAAI/article/view/25274/25046) |AAAI | 2023| R-101| Faster-RCNN |Fine-tuning|FSOD| -/-/19.3/23.1|[PyTorch](https://github.com/lxn96/ICPE)|
+[VFA](https://ojs.aaai.org/index.php/AAAI/article/view/25153/24925)| AAAI | 2023| R-101| Faster-RCNN |Fine-tuning|FSOD| -/-/16.2/18.9|[PyTorch](https://github.com/csuhan/VFA)|
+[D&R](https://ojs.aaai.org/index.php/AAAI/article/view/25216/24988) | AAAI | 2023| R-101| Faster-RCNN |Fine-tuning|gFSOD| 6.1/13.9/16.4/20.0|[PyTorch](https://github.com/ZYN-1101/DandR)
 [DCFS](https://openreview.net/pdf?id=dVXO3Orjmxk)| NeurIPS | 2022| R-101| Faster-RCNN |Fine-tuning|FSOD| 8.1/16.6/19.5/22.7 |[PyTorch](https://csgaobb.github.io/Projects/DCFS)|
 [DCFS](https://openreview.net/pdf?id=dVXO3Orjmxk)| NeurIPS | 2022| R-101| Faster-RCNN |Fine-tuning|gFSOD|6.2/15.7/18.3/21.9 |[PyTorch](https://csgaobb.github.io/Projects/DCFS)|
 |[CoCo-RCNN](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf)| ECCV |2022|R-101|Sparse-RCNN| Fine-tuning |FSOD|5.2/-/16.4/19.2|[PyTorch](https://github.com/Phoenix-V/coco-rcnn)|

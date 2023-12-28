@@ -8,6 +8,15 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 - PASCAL-VOC FSOD Leaderboard: [[html]](https://csgaobb.github.io/Projects/pascalvoc-fsod.html) [[Markdown]](https://github.com/gaobb/Few-Shot-Object-Detection-Papers/blob/master/pascalvoc-fsod.md)
 
 ## Few-Shot Object Detection Papers
+- [FS-DETR: Few-Shot DEtection TRansformer with prompting and without re-training](https://openaccess.thecvf.com/content/ICCV2023/papers/Bulat_FS-DETR_Few-Shot_DEtection_TRansformer_with_Prompting_and_without_Re-Training_ICCV_2023_paper.pdf),ICCV 2023.
+- [σ-Adaptive Decoupled Prototype for Few-Shot Object Detection](https://openaccess.thecvf.com/content/ICCV2023/papers/Du_s-Adaptive_Decoupled_Prototype_for_Few-Shot_Object_Detection_ICCV_2023_paper.pdf), ICCV 2023.
+- [Generating Features with Increased Crop-related Diversity for Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2023/papers/Xu_Generating_Features_With_Increased_Crop-Related_Diversity_for_Few-Shot_Object_Detection_CVPR_2023_paper.pdf), CVPR 2023.
+- [Meta-tuning Loss Functions and Data Augmentation for Few-shot Object Detection](https://openaccess.thecvf.com/content/CVPR2023/papers/Demirel_Meta-Tuning_Loss_Functions_and_Data_Augmentation_for_Few-Shot_Object_Detection_CVPR_2023_paper.pdf),CVPR 2023.
+- [NIFF: Alleviating Forgetting in Generalized Few-Shot Object Detection via Neural Instance Feature Forging](https://openaccess.thecvf.com/content/CVPR2023/papers/Guirguis_NIFF_Alleviating_Forgetting_in_Generalized_Few-Shot_Object_Detection_via_Neural_CVPR_2023_paper.pdf), CVPR 2023.
+- [DiGeo: Discriminative Geometry-Aware Learning for Generalized Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2023/papers/Ma_DiGeo_Discriminative_Geometry-Aware_Learning_for_Generalized_Few-Shot_Object_Detection_CVPR_2023_paper.pdf), CVPR 2023.
+- [Breaking Immutable: Information-Coupled Prototype Elaboration for Few-Shot Object Detection](https://ojs.aaai.org/index.php/AAAI/article/view/25274/25046), AAAI 2023.
+- [Few-Shot Object Detection via Variational Feature Aggregation](https://ojs.aaai.org/index.php/AAAI/article/view/25153/24925), AAAI 2023.
+- [Disentangle and Remerge: Interventional Knowledge Distillation for Few-Shot Object Detection from A Conditional Causal Perspective](https://ojs.aaai.org/index.php/AAAI/article/view/25216/24988),AAAI 2023.
 - [DCFS: Decoupling Classifier for Boosting Few-shot Object Detection and Instance Segmentation](https://openreview.net/pdf?id=dVXO3Orjmxk), NeurIPS 2022.
 - [CoCo-RCNN: Few-Shot End-to-End Object Detection via Constantly Concentrated Encoding across Heads](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136860056.pdf), ECCV 2022.
 - [FewX: Few-Shot Object Detection with Model Calibration](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136790707.pdf), ECCV 2022.

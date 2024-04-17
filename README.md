@@ -74,3 +74,6 @@ If your paper is not in the list, please feel free to [raise an issue](https://g
 
 # Contact
 csgaobb@gmail.com
+
+<div align="center"><img src="./wechatgroup.jpg" width="100"></div>
+
